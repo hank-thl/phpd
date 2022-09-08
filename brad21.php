@@ -2,13 +2,14 @@
     <tr>
 
         <?php
-        for ($k = 2; $k <= 6; $k += 4) {
+        for ($k = 0; $k < 2; $k ++) {
             echo '<tr>';
-            for ($j = $k; $j <= ($k+3); $j++) {
+            for ($j = 1; $j < 5; $j++) {
+                $newj = $j + $k * 4;
                 echo '<td>';
                 for ($i = 1; $i < 10; $i++) {
-                    $result = $i * $j;
-                    echo "{$j} x {$i} = {$result}<br>";
+                    $result = $i * $newj;
+                    echo "{$newj} x {$i} = {$result}<br>";
                 }
                 echo '</td>';
             }
