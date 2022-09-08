@@ -2,10 +2,14 @@
     <tr>
 
         <?php
-        for ($k = 0; $k < 2; $k ++) {
+        $start = 1;
+        $rows = 3;
+        $cols = 3;
+
+        for ($k = 0; $k < $rows; $k ++) {
             echo '<tr>';
-            for ($j = 1; $j < 5; $j++) {
-                $newj = $j + $k * 4;
+            for ($j = $start; $j < $start+$cols; $j++) {
+                $newj = $j + $k * $cols;
                 echo '<td>';
                 for ($i = 1; $i < 10; $i++) {
                     $result = $i * $newj;
