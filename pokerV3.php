@@ -18,3 +18,19 @@
    }
 
 ?>
+<table border="1" width="100%">
+    
+        <?php
+        foreach($players as $player){
+            echo "<tr>";
+            foreach($player as $card){
+                echo"<td>{$card}</td>";
+            }
+            echo "</tr>";
+        }
+            
+        ?>
+
+        
+    
+</table>
